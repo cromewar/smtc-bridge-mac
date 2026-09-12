@@ -15,9 +15,11 @@ A ready-to-use "Now Playing" widget utilizing SMTC Bridge is available here:<br>
 ### Homebrew (recommended)
 ```bash
 brew tap cromewar/smtc-bridge https://github.com/cromewar/smtc-bridge-mac
+brew trust cromewar/smtc-bridge
 brew install --cask --no-quarantine smtc-bridge
 open -a "SMTC Bridge"
 ```
+The `brew trust` step is required by Homebrew 6+ for third-party taps (older Homebrew ignores it).
 `--no-quarantine` is needed because the app is ad-hoc signed, not notarized; without it macOS shows
 "Apple could not verify SMTC Bridge.app is free of malware" and refuses to open it. If you already installed
 without the flag, run `xattr -dr com.apple.quarantine "/Applications/SMTC Bridge.app"` once.
