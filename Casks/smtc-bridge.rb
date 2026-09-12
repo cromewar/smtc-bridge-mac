@@ -1,6 +1,6 @@
 cask "smtc-bridge" do
   version "1.0.0"
-  sha256 "b65b2f2bec37f76b056556995a676868c4a5034e1ead4e415bd8a59830f7435d"
+  sha256 "2d71e4014102d4b683afe6670d241a0367312d7603002e55fecaae4bec29035e"
 
   url "https://github.com/cromewar/smtc-bridge-mac/releases/download/v#{version}/SMTC-Bridge-#{version}.zip"
   name "SMTC Bridge"
